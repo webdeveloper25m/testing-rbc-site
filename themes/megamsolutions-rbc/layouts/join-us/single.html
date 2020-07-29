@@ -1,0 +1,37 @@
+
+{{ define "main" }}
+<section class="section-hero-news hero hero--news mb-3">
+  
+<div class="hero-breadcrumb">
+  <div class="carousel__item--heading text-center">{{ .Title }}</div>
+  <ul class="hero-breadcrumb-list">
+    <li><a href="/"><i class="fas fa-home"></i></a></li>
+    <li><a href="/join-us"><i class="fas fa-user-graduate"></i>Join Us</a></li>
+    <li><a href="#"><i class="fas fa-newspaper"></i>{{.Title}}</a></li>
+  </ul>
+</div>
+</section>
+<div class="container event">
+  <div class="row  justify-content-center">
+    <h2 class="heading-tertiary u-margin-bottom-medium text-center">{{.Title}}</h2>
+  </div>
+  <div class="row  justify-content-center">
+    <h3 class="heading text-center mb-2"><time>{{ .PublishDate.Format "January 2, 2006"}}</time></h3>
+    </div>
+      <div class="row  justify-content-center">
+      <div class="col">
+        
+        <h4 class="text-center heading mb-2"><b>{{ .Params.authors }}</b></h4>
+      
+      </div>
+     </div> 
+     <div class="row  justify-content-center">
+  <div class="col-md-10">
+      {{.Content}}  
+    </div>
+  </div>
+  </div>
+
+  
+{{ end }}
+

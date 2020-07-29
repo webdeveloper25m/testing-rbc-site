@@ -1,0 +1,12 @@
+---
+title: "Krishnan Balasubramanian"
+date: 2020-07-28T17:36:15+05:30
+images:
+  - /images/people/facultybala.jpg
+role: "Institute Chair Professor"
+draft: false
+---
+
+{{<rawhtml>}}
+<h3><b>Institute Chair Professor<</b></h3>
+{{</rawhtml>}}

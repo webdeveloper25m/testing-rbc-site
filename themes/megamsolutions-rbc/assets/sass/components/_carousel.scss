@@ -1,0 +1,89 @@
+.carousel {
+  color: $color-grey-light-1;
+  position: relative;
+  padding: 20rem 0;
+  overflow: hidden; 
+  min-width: 80%; 
+  width: 0;
+
+  &__item {
+    padding: 2rem;
+
+    &--heading {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      // text-transform: uppercase;
+    }
+    &--desc {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: 4rem;
+    }
+  }
+  &__prev,
+  &__next {
+    background-color: transparent;
+    color: $color-grey-light-1;
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    bottom: -8.5rem;
+    transition: all 0.2s;
+    outline: 0;
+  }
+
+  &__prev:focus,
+  &__next:focus {
+    outline: 0;
+  }
+
+  &__prev:hover,
+  &__next:hover {
+    color: $color-primary;
+  }
+  &__prev {
+    right: 10rem;
+  }
+
+  &__next {
+    right: 6rem;
+  }
+
+  .slick-slide {
+    outline: 0;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 4rem;
+    bottom: -10rem;
+    text-align: center;
+    padding-left: 0;
+    outline: 0;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    margin: 0.2rem;
+  }
+
+  .slick-dots li.slick-active button {
+    background: $color-primary;
+    width: 3rem;
+    outline: 0;
+  }
+
+  .slick-dots li button {
+    height: 6px;
+    width: 12px;
+    background: $color-grey-light-2;
+    color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    border: 0;
+    outline: 0;
+  }
+}

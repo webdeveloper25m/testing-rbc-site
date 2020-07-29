@@ -1,0 +1,31 @@
+<!--
+     THIS PAGE SHOWS tags\tag-name FILTERING CONTENT
+--->
+{{ $permalink := .Permalink }}
+  <div class="card-deck mt-5">
+    <div class="card">
+      {{ with .Params.images }}
+        <a href="{{ $permalink }}"><img src="{{ index . 0 }}" alt="" class="card-img-top img-fluid"></a>
+      {{ end }}
+        <div class="card-body">
+          <div class="d-inline-block">
+            {{ range .Params.categories }}
+              <button class="btn btn--animated mb-1"> <a class="category" href="/categories/{{ . | urlize}}">{{ . }}</a></button>
+            {{ end }}
+          </div>
+            <h5> <a class="card-title" href="{{ .Permalink }}">{{ .Title }}</a></h5>
+            <div class="card-text">
+            {{ .Summary }}
+           </div>
+         {{- if .Truncated -}}
+         <a href='{{ .RelPermalink }}'>&hellip; Read more</a>
+         {{- end -}}
+        <br>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+

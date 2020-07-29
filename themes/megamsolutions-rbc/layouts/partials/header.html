@@ -1,0 +1,41 @@
+  <nav class="sidebar" id='sidebar'>
+    <div class="sidebar__header">
+      <img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}" class="sidebar__logo">
+      <span class="sidebar__close">&times;</span>
+    </div>
+    <ul class="sidebar__nav">
+       {{ $current := . }}
+        {{ range .Site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+          {{ $active = or $active (eq .Name $current.Title) }}
+          {{ $active = or $active (and  (eq $current.Title "RBC-DSAI") (eq .Name "Home")) }}
+          {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | absURL }}"><span>{{ .Name }}</span></a>
+                {{ end }}
+              </div>
+            </li>
+          {{ else }}
+            <li class="nav-item {{if $active }}active{{ end }}">
+              <a class="nav-link" href="{{ .URL | absURL }}">
+                <i class="{{ .Pre }} header__icon"></i> 
+                <span>{{ .Name }}</span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+    </ul>
+    <div class="sidebar__social-icons">
+      <a href="https://twitter.com/rbc_dsai_iitm" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/rbcdsai/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/rbcdsai" class="social-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/rbcdsai/" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href=" https://www.youtube.com/channel/UCKaYqGvmULmTrN0PH5YPFcA  " class="social-link"><i class="fab fa-youtube"></i></a>
+    </div>
+  </nav>

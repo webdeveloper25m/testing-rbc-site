@@ -1,0 +1,32 @@
+
+<!---
+THIS PAGE USED TO SHOW CARD COMPONENT WHICH IS USED IN RESEARCH LIST AND SINGLE PAGE,etc..
+--->
+
+{{ $permalink := .Permalink }}
+
+  <div class="wow bounceInUp mt-5" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;">
+  <div class="card card__news" >
+    <div class="card-image" style="width: 12.5vw; height:60vh;">
+    {{ with .Params.images }}
+      <a href="{{ $permalink }}"><img src="{{ index . 0 }}"  alt="" class="card-img-top card__news-img" style="height:28vh;margin:5px;border-radius:50%;text-align: center"></a>
+       {{ end }}
+     </div>
+        <div class="card-body">
+                  <h1 class="text-center"><b><a class="card-title card__news-header" href="{{ .Permalink }}">{{ .Title }}</a></b></h1>
+                  <div>
+                  <h4 class="text-center">{{ .Params.role }}</h4>
+                  </div>
+                   <div>
+                    <p class="card-text">
+                        {{ .Summary }}
+                        </p>
+                      </div>
+        </div>
+    </div>
+</div>
+
+
+ 
+
+

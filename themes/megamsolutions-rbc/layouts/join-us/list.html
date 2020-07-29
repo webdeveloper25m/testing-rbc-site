@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="section">
+<div class="row mt-2">
+  <div class="col-12">
+  <section class="section-hero-news hero hero--news" style="margin-top:4%;height: 35vh;">
+  <div class="hero-breadcrumb">
+  <div class="carousel__item--heading text-center">Join Us</div>
+  <ul class="hero-breadcrumb-list">
+    <li><a href="/"><i class="fas fa-home"></i></a></li>
+    <li><a href="#"><i class="fas fa-newspaper"></i> {{ .Title }}</a></li>
+  </ul>
+</div>
+</section>
+</div>
+</div>
+<div class ="row">
+<div class="col">
+  <div class="mt-5 text-center" style="height: 15vh; border-bottom: 1px solid #000;font-size: 1.5rem;">
+   <b></b></div>
+  
+   <div style="transform:translate(86vh,-55%);border: 1px solid white;background-color: white;width: 6.5vw;padding: 4px;font-size: 1.40rem;"><strong>Home>Join Us</strong></div>
+</div>
+
+</div>
+</div>
+
+<!---shuffle used for cayegories filter--->
+<section class="section mt-4">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active">
+            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+          </label>
+          {{ $categories := slice }}
+          {{ range sort .Data.Pages }}
+          {{ range sort .Params.categories }}
+          {{ $categories = $categories | append . }}
+          {{ end }}
+          {{ end }}
+          {{ range sort ( $categories | uniq ) }}
+          <label class="btn btn-sm btn-primary">
+            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+          </label>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <h2 class="heading-secondary u-margin-top-medium u-margin-bottom-medium">{{ .Title }}</h2>
+    <div class="row shuffle-wrapper mb-2">
+      {{ range  .Paginator.Pages }}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+       {{ partial  "widgets/join-us-post-card.html"  .}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

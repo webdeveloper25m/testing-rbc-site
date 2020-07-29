@@ -1,0 +1,89 @@
+<!-- footer -->
+<footer class="footer">
+  <div class="footer__box">
+    <div class="container-fluid">
+      <div class="row justify-content-sm-around">
+        <div class="col-md-3">     
+          <div class="footer__content">
+            <div class="footer__logo">
+              <img src="{{ .Site.Params.logo | absURL }}" class="footer__img" alt="logo footer">
+            </div>
+            <p class="footer__text">
+              Founded in August 2017, with a vision to become an internationally renowned centre for data science research, where long-standing fundamental research problems, cutting across disciplines, are targeted and solved.
+            </p>
+            <div class="footer__social-icons">
+              <a href="https://twitter.com/rbc_dsai_iitm" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/rbcdsai/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/rbcdsai" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rbcdsai/" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href=" https://www.youtube.com/channel/UCKaYqGvmULmTrN0PH5YPFcA  " class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>     
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <h5 class="footer__heading">Useful Links</h5>
+          <ol class="list-unstyled">
+            {{ $current := . }}
+            {{ range .Site.Menus.main }}
+              {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+              {{ $active = or $active (eq .Name $current.Title) }}
+              {{ if not (eq .Name "Home") }}
+                <li class="footer__list {{if $active }}active{{ end }}"><a href="{{ .URL | absURL }}" class="footer__links">{{ .Name }}</a></li>
+              {{ end }}
+            {{end}}
+          </ol>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <h5 class="footer__heading">Contact Us</h5>
+          <p class="footer__address">
+            5th floor, Block II, <br>
+            Bhupat and Jyoti Mehta School of Biosciences, <br>
+            Indian Institute of Technology Madras, <br>
+            Chennai-600036,<br>
+            India.<br>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer__heading">Google Map</h5>
+          <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.720059685403!2d80.22513211527!3d12.989748417993397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52677e04d2c169%3A0x66c51afe9c9505f9!2sRobert%20Bosch%20Centre%20for%20Data%20Science%20and%20Artificial%20Intelligence!5e0!3m2!1sen!2sin!4v1593521418458!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__bottom-copy">{{ .Site.Params.copyright | markdownify }}</p>
+  </div>
+</footer>
+<!-- /footer -->
+<a href="#" class="back-to-top">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+{{ $jquery := resources.Get "js/jquery.min.js" }}
+<script src="{{$jquery.Permalink}}"></script>
+
+{{ $jquery_ease := resources.Get "js/jquery.easing.min.js" }}
+<script src="{{$jquery_ease.Permalink}}"></script>
+
+{{ $bootstrap := resources.Get "js/bootstrap.min.js" }}
+<script src="{{$bootstrap.Permalink}}"></script>
+
+{{ $shuffle := resources.Get "js/shuffle.min.js" }}
+<script src="{{$shuffle.Permalink}}"></script>
+
+{{ $slick := resources.Get "js/slick.min.js" }}
+<script src="{{$slick.Permalink}}"></script>
+
+{{ $venobox := resources.Get "js/venobox.min.js" }}
+<script src="{{$venobox.Permalink}}"></script>
+
+{{ $wow := resources.Get "js/wow.min.js" }}
+<script src="{{$wow.Permalink}}"></script>
+
+{{ $parallax := resources.Get "js/parallax.min.js" }}
+<script src="{{$parallax.Permalink}}"></script>
+
+{{ $main := resources.Get "js/main.js" }}
+<script src="{{$main.Permalink}}"></script>

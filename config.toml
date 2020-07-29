@@ -1,0 +1,96 @@
+baseURL = "https://rbc-dsai.megamsolutions.com"
+languageCode = "en-us"
+title = "RBC-DSAI"
+theme = "megamsolutions-rbc"
+paginate = 20
+summaryLength=15
+
+############################## navigation ###############################
+
+[[menu.main]]
+name = "Home"
+URL = ""
+pre = "fas fa-home"
+weight = 1
+
+[[menu.main]]
+name = "Research"
+URL = "research"
+pre = "fas fa-vial"
+weight = 2
+
+[[menu.main]]
+name = "People"
+URL = "people"
+pre = "fas fa-user"
+weight = 3
+
+
+[[menu.main]]
+name = "Publications"
+URL = "publications"
+pre = "fas fa-file-alt"
+weight = 4
+
+[[menu.main]]
+name = "Teaching"
+URL = "teaching"
+pre = "fas fa-chalkboard-teacher"
+weight = 5
+
+[[menu.main]]
+name = "Join Us"
+URL = "join-us"
+pre = "fas fa-sign-in-alt"
+weight = 6
+
+[[menu.main]]
+name = "Programs"
+URL = "programs"
+pre = "fas fa-chalkboard"
+weight = 7
+
+[[menu.main]]
+name = "Management"
+URL = "management"
+pre = "fas fa-university"
+weight = 8
+
+[[menu.main]]
+name = "Gallery"
+URL = "gallery"
+pre = "fas fa-images"
+weight = 9
+
+[[menu.main]]
+name = "About Us"
+URL = "about-us"
+pre = "fas fa-address-card"
+weight = 10
+
+#######################taxonomies#################################
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category="categories"
+
+#################### default parameters ################################
+[params]
+main_menu = "Home"
+logo = "images/logo.png"
+# meta data
+author = "Megamsolutions"
+description = "RBC DSAI site"
+keywords = "IIT Madras, RBC DSAI, Data Science, Artificial Intelligence, Machine Learning"
+address = "5th floor, Block II, Bhupat and Jyoti Mehta School of Biosciences, Indian Institute of Technology Madras, Chennai-600036"
+# google analitycs ID
+google_analitycs_id = "Your ID"
+# copyright
+copyright = "Robert Bosch Center for Data Science and Artificial Intelligence | IIT Madras &copy; 2020"
+
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "images/preloader.gif" # use .png , .svg or .gif format

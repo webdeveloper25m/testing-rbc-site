@@ -1,0 +1,140 @@
+.hero-section {
+  // margin-top: 4rem;
+  background-image: linear-gradient(
+      rgba($color-main, 0.6),
+      rgba($color-main-light, 0.6)
+    ),
+    url('../images/hero-3.jpg');
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+
+  &__parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hero__shape {
+  overflow: hidden;
+  display: inline-block;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.shape-1 {
+  top: 12rem !important;
+  left: 50rem !important;
+}
+
+.shape-2 {
+  top: 12rem !important;
+  left: 52rem !important;
+}
+
+.shape-3 {
+  top: 12rem !important;
+  left: 54rem !important;
+}
+
+.shape-4 {
+  top: 10rem !important;
+  left: 45rem !important;
+}
+
+.shape-5 {
+  top: 10rem !important;
+  left: 59rem !important;
+}
+
+.shape-6 {
+  top: 15rem !important;
+  left: 45rem !important;
+}
+
+.shape-7 {
+  top: 15rem !important;
+  left: 59rem !important;
+}
+
+.shape-8 {
+  top: 8rem !important;
+  left: 48rem !important;
+}
+
+.shape-9 {
+  top: 8rem !important;
+  left: 55rem !important;
+}
+
+.shape-10 {
+  top: 18rem !important;
+  left: 56rem !important;
+}
+
+.shape-11 {
+  top: 18rem !important;
+  left: 48rem !important;
+}
+
+.shape-12 {
+  top: 19rem !important;
+  left: 52rem !important;
+}
+
+.section-news-event {
+  background-color: $color-grey-light-1;
+}
+
+.section-links {
+  .links {
+    &-list {
+      list-style: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: $color-grey-dark-2;
+      ul {
+        margin-left: 2rem;
+      }
+    }
+
+    &-link {
+      margin: 0.5rem 0;
+      i {
+        padding: 0.5rem;
+      }
+    }
+
+    &-link a {
+      display: inline-block;
+      transition: all 0.3s ease;
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-font-primary;
+        // border-bottom: 1px solid $color-font-primary;
+      }
+
+      &:hover {
+        background-color: $color-font-primary;
+        color: $color-grey-light-1;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.section-collaborators {
+  background-color: $color-grey-light-1;
+  .collab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,122 @@
+
+
+
+{{ define "main" }}
+<section class="section-hero-news hero hero--news">
+  
+<div class="hero-breadcrumb">
+  <div class="carousel__item--heading text-center">{{ .Title }}</div>
+  <ul class="hero-breadcrumb-list">
+    <li><a href="/"><i class="fas fa-home"></i></a></li>
+    <li><a href="/research"><i class="fas fa-home"></i>Research</a></li>
+    <li><a href="#"><i class="fas fa-newspaper"></i>{{.Title}}</a></li>
+  </ul>
+</div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row mt-5">
+     
+      <div  class="col">
+       <div class="row mb-2">
+        <div class="col">
+          <h3 class="heading text-center mb-2"><time>{{ .PublishDate.Format "January 2, 2006"}}</time></h3>
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col">
+          <div class="author-text text-center">
+            <h1><{{ .Title }}</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <h4 class="text-center heading mb-2"><b>{{ .Params.authors }}</b> </h4>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <div class="card mt-5">
+            {{ with .Params.images }}
+            <a href=""><img src="{{ index . 0 }}" alt="" class="card-img-top img-fluid"></a>
+            {{ end }}
+          </div>
+          <div class="row">
+            <div class="col">
+               <aside>
+               <article class="article-text">
+               <div class="content">
+            {{.Content }}
+          </div>
+      </article>
+      </aside>
+      </div>
+       </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+      
+<!--<div class="container">
+  <div class="row">
+   <div class="col-4">
+    <div class="card-dick">
+     <div class="card mt-5">
+            {{ with .Params.images }}
+            <a href=""><img src="{{ index . 0 }}" alt="" class="card-img-top img-fluid"></a>
+            {{ end }}
+
+    <div class="card-body">
+  <div class="tags d-inline-block mb-3">
+    {{ range .Params.categories }}
+    <button class="btn btn--animated mb-1"> <a class="category" href="/categories/{{ . | urlize}}">{{ . }}</a></button>
+    {{ end }}
+ </div>
+  <div class="tag mb-2">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+ {{ range $i, $e := .Params.tags -}}
+ {{- if $i -}}, {{ end -}}
+    <a class="tag-link" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+{{- end -}}
+</div>
+<div>
+   <p class="m-4"><a class="tag-link" href="/authors/{{ .Params.name }}/">{{ .Params.authors  }}</a></hp> 
+  </div>
+ </div>
+  </div>
+  </div>
+</div>
+  <div class="col-8">
+      <aside>
+        <article class="article-text">
+        <div class="content">
+            {{.Content }}
+          </div>
+      </article>
+      </aside>
+</div>
+</div>
+</div>-->
+
+
+
+
+
+     <!--<h5> <a class="card-title" href="{{ .Permalink }}">{{ .Title }}</a></h5>
+        <div class="card-text">
+            {{ .Summary }}
+        </div>
+         {{- if .Truncated -}}
+         <a href='{{ .RelPermalink }}'>&hellip; Read more</a>
+         {{- end -}}
+        <br>
+    </div>
+  </div>-->
+  
+
+
+{{ end }}

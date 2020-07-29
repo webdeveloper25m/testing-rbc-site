@@ -1,0 +1,40 @@
+
+{{ define "main"}}
+<h1>{{ .Params.name }}</h1>
+<img src="{{ .Params.photo }}" alt=""/>
+
+<h2>Bio</h2>
+<div class="container-fluid">
+<div class="card" style="width:400px">
+  <img class="card card__news" src="/images/hero-1.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title text-center"><a class="tag-link" href="/authors/{{ .Params.name }}/">{{ .Title  }}</a></h4>
+    <div class="card-text text-center">
+    <a href="https://www.facebook.com" class="fa fa-facebook social-icon"></a>
+     <a href="#" class="social-icon fa fa-google"></a>
+  </div>
+    </div>
+  </div>
+</div>
+<h2>Articles</h2>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-6">
+    {{ range .Data.Pages }}
+    <h4 class="mb-4"><a class="tag-link" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    {{ end }}
+</div>
+</div>
+</div>
+
+{{ end }}
+
+
+
+
+
+
+
+ 
+
+

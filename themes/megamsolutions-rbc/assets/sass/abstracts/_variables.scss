@@ -1,0 +1,62 @@
+// COLORS
+$color-primary: #EE2128;
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+
+$color-secondary: #A74F14;
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-secondary-dark: darken($color-secondary, 20%);
+
+$color-tertiary: #2F8b88;
+$color-tertiary-light: lighten($color-tertiary, 20%);
+$color-tertiary-dark: darken($color-tertiary, 20%);
+
+$color-font-primary: #737373;
+$color-font-primary-light: lighten($color-font-primary, 20%);
+$color-font-primary-dark: darken($color-font-primary, 20%);
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #d6d5d5;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-timeline-1: #fe6847;
+$color-timeline-1-light:#f59c8b;
+$color-timeline-2: #48be6b;
+$color-timeline-2-light: #92efad;
+$color-timeline-3: #8a5ec1;
+$color-timeline-3-light: #a381cf;
+$color-timeline-4: #f18391;
+$color-timeline-4-light: #f2aab3;
+
+$color-timeline-5: #3F51B5;
+$color-timeline-5-dark: #303F9F;
+$color-timeline-5-light: #C5CAE9;
+$color-timeline-5-accent: #FF4081;
+
+$color-newsletter-1: #f05f8f;
+$color-newsletter-2: #de59ec;
+$color-newsletter-3: #7A21EE;
+$color-newsletter-4: #6270ee;
+$color-newsletter-5: #4cd3ee;
+$color-newsletter-6: #eca34e;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-main: #150928;
+$color-main-dark: #0f071d;
+$color-main-light: #220f41;
+$color-main-light-transparent: rgba($color-main, 0.8);
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

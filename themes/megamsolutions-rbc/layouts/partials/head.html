@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}" />
+  {{ with .Site.Params.author }}
+  <meta name="author" content="{{ . }}" />
+  {{ end }}
+  <meta
+    name="description"
+    content="{{ .Description | default (.Summary | default .Site.Params.description ) }}"
+  />
+  <meta
+    name="keywords"
+    content="{{ (delimit .Keywords `,`) | default .Site.Params.keywords }}"
+  />
+  {{ if .Permalink }}
+  <base href="{{ .Permalink }}" />
+  {{ end }}
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ if .Permalink }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ end }}
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+    crossorigin="anonymous"
+  />
+  {{ $bootstrap := resources.Get "css/bootstrap.min.css" }}
+  <link rel="stylesheet" href="{{$bootstrap.Permalink}}" />
+
+  {{ $animate := resources.Get "css/animate.min.css" }}
+  <link rel="stylesheet" href="{{$animate.Permalink}}" />
+
+  {{ $slick := resources.Get "css/slick.css" }}
+  <link rel="stylesheet" href="{{$slick.Permalink}}" />
+
+  {{ $venobox := resources.Get "css/venobox.css" }}
+  <link rel="stylesheet" href="{{$venobox.Permalink}}" />
+
+  {{ if .Site.IsServer }} 
+  {{ $cssOpts := (dict "targetPath" "css/style.css" "enableSourceMap" true ) }} 
+  {{ $styles := resources.Get "sass/main.scss" | toCSS $cssOpts }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen" />
+  {{ else }} 
+  {{ $cssOpts := (dict "targetPath" "css/style.css" ) }} {{ $styles := resources.Get "sass/main.scss" | toCSS $cssOpts | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.RelPermalink }}"
+    integrity="{{ $styles.Data.Integrity }}"
+    crossorigin="anonymous"
+    media="screen"
+  />
+  {{ end }}
+</head>

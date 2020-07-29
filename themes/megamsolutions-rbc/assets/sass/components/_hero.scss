@@ -1,0 +1,95 @@
+.hero {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+
+  &-breadcrumb {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-grey-light-1;
+    backface-visibility: hidden;
+    
+    &-list {
+      list-style: none;
+      display: inline-block;
+
+      li {
+        float: left;
+        a {
+          color: inherit;
+          display: block;
+          background-color: $color-main-light;
+          text-decoration: none;
+          text-align: center;
+          padding: 1rem 1.5rem;
+          margin-right: 4rem;
+          position: relative;
+          line-height: 4rem;
+
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            border: 0 solid $color-main-light;
+            border-width: 3rem 2rem;
+            width: 0;
+            height: 0;
+          }
+
+          &:before {
+            left: -3.2rem;
+            border-left-color: transparent;
+          }
+          &:after {
+            left: 100%;
+            border-color: transparent;
+            border-left-color: $color-main-light;
+          }
+          &:hover {
+            background-color: $color-main-dark;
+            &:before {
+              border-color: $color-main-dark;
+              border-left-color: transparent;
+            }
+            &:after {
+              border-left-color: $color-main-dark;
+            }
+          }
+        }
+        &:first-child {
+          a {
+            padding-left: 1rem;
+            border-radius: 1rem 0 0 1rem;
+            &:before {
+              border: none;
+            }
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-right: 1rem;
+            border-radius: 0 1rem 1rem 0;
+            &:after {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--news {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.5),
+        rgba($color-main, 0.5)
+      ),
+      url('/images/hero-news.jpg');
+  }
+}

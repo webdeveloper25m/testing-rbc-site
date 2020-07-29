@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="section-hero-news hero hero--news">
+  <div class="hero-breadcrumb">
+    <ul class="hero-breadcrumb-list">
+      <li>
+        <a href="{{ `/` | absURL }}"><i class="fas fa-home"></i></a>
+      </li>
+      <li>
+        <a href="{{ `/news/` | absURL }}"><i class="fas fa-newspaper"></i> News</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section-page-news">
+  <div class="container-fluid">
+    <div class="text-center mb-4">
+      <h2 class="heading-secondary u-margin-top-medium u-margin-bottom-medium">
+        News
+      </h2>
+    </div>
+    <div class="row">
+      {{ with .Site.Data.homepage.news }} 
+      {{ range .items}}
+      <div class="col-lg-3 col-md-6 ">
+        <div class="card card__news">
+          <img src="{{.image}}" alt="" class="card-img-top card__news-img" />
+          <div class="card__news-icons">
+            <i class="fas fa-newspaper"></i><span>{{.newsprovider}}</span>
+            <i class="fas fa-calendar"></i
+            ><span>{{ dateFormat "January 2, 2006" .date }}</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card__news-header">{{.title}}</h5>
+            <p class="card-text">{{.summary | truncate 120}}</p>
+          </div>
+          <div class="card-footer">
+            <div class="card__news-cta">
+              <a class="btn-text btn-text--small" href="{{.link}}"
+                >Read &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }} 
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

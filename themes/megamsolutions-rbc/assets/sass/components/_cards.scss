@@ -1,0 +1,340 @@
+.card {
+
+  &-body {
+    flex: 0 1 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // white-space: nowrap;
+  }
+
+  &-footer {
+    background-color: $color-white;
+    border: none;
+    display: flex;
+    flex: 1 1 2rem;
+    flex-direction: row;
+    justify-self: flex-end;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.card__news {
+  // width: 22rem;
+  height: 32rem;
+  max-height: 35rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+  border-bottom: 3px solid $color-primary;
+  // padding-bottom: 2rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem;
+
+  &-img {
+    height: 12rem;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+
+  &-cta {
+    padding: 0.5rem 0.25rem;
+    margin-left: auto;
+  }
+
+  &-icons {
+    padding: 1rem;
+    i {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      color: $color-primary-light;
+    }
+
+    span {
+      margin-right: 0.25rem;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card__publications {
+  height: 32rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+  border-bottom: 3px solid $color-main;
+  padding-bottom: 2rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 2rem;
+
+  &-img {
+    height: 12rem;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &-cta {
+    padding: 1.25rem;
+    align-self: flex-end;
+  }
+
+  &-icons {
+    padding: 1rem;
+    i {
+      padding: 0.5rem;
+      font-size: 1rem;
+      color: $color-main-light;
+    }
+
+    span {
+      margin-right: 0.25rem;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card__newsletter {
+  cursor: pointer;
+  position: relative;
+  height: 6rem;
+  padding-bottom: 2rem;
+  transition: transform 0.6s ease;
+  --offset-multiplier: 0.3rem;
+  --translate: 0;
+  transform: translate(var(--translate), var(--translate));
+  margin-bottom: 3rem;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  &:hover {
+    --offset-multiplier: 0.4rem;
+    --translate: calc(1px * 4);
+    transition: transform 0.3s ease;
+  }
+  .child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: $color-grey-light-1;
+    box-shadow: 0 4px 8px rgba($color-black, 0.1),
+      0px -4px 8px rgba($color-white, 0.8);
+    border-radius: 0.5rem;
+    transition: inherit;
+    --translate: calc(var(--offset) * var(--offset-multiplier));
+    transform: translate(var(--translate), var(--translate));
+    z-index: 5;
+
+    &:nth-child(1) {
+      --offset: 0;
+      z-index: 4;
+    }
+    &:nth-child(2) {
+      --offset: 1;
+      z-index: 3;
+    }
+    &:nth-child(3) {
+      --offset: 2;
+      z-index: 2;
+    }
+    &:nth-child(4) {
+      --offset: 3;
+      z-index: 1;
+    }
+    &:nth-child(5) {
+      --offset: 4;
+      z-index: 0;
+    }
+  }
+
+  &--color1 {
+    .child {
+      background-color: $color-newsletter-1;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &--color2 {
+    .child {
+      background-color: $color-newsletter-2;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &--color3 {
+    .child {
+      background-color: $color-newsletter-3;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &--color4 {
+    .child {
+      background-color: $color-newsletter-4;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &--color5 {
+    .child {
+      background-color: $color-newsletter-5;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &--color6 {
+    .child {
+      background-color: $color-newsletter-6;
+      color: $color-grey-light-1;
+    }
+  }
+}
+
+.card-collab {
+  position: relative;
+  z-index: 1;
+  width: 15rem;
+  height: 15rem;
+  perspective: 100rem;
+  display: inline-block;
+  border: 0.1px solid $color-grey-light-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-right: 3rem;
+
+  &__cover {
+    z-index: 1;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+    // filter: grayscale(0);
+
+    // Gloss
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120%;
+      background: linear-gradient(
+        226deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.4) 35%,
+        rgba(255, 255, 255, 0.2) 42%,
+        rgba(255, 255, 255, 0) 60%
+      );
+      transform: translateY(-40%);
+      will-change: transform;
+      transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+    }
+  }
+
+  &:hover &__cover {
+    transform: rotateX(7deg) translateY(-6px);
+    // filter: grayscale(100);
+
+    &::after {
+      transform: translateY(0%);
+    }
+  }
+
+  // Shadows
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    will-change: opacity;
+    // background-color: rgba($color-black, 0.1);
+    transform-origin: top center;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+    // box-shadow: 0 1rem 5rem rgba($color-black, 0.15);
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+    transform: rotateX(7deg) translateY(-6px) scale(1.05);
+  }
+}
+
+.card-collab--small {
+  width: 10rem;
+  height: 10rem;
+  .card-collab__cover {
+    width: 7rem;
+    height: 7rem;
+  }
+}
