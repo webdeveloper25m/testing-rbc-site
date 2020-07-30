@@ -2,7 +2,7 @@ baseURL = "https://rbc-dsai.megamsolutions.com"
 languageCode = "en-us"
 title = "RBC-DSAI"
 theme = "megamsolutions-rbc"
-paginate = 20
+paginate = 30
 summaryLength=15
 
 ############################## navigation ###############################

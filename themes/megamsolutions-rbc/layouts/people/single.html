@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="speaker-details mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-image">
+             {{ with .Params.images }}
+            <a href=""><img src="{{ index . 0 }}" alt="" class="card-img-top img-fluid" style="background-color: white;"></a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-text">
+              <h2 class="heading mb-2"><b>{{ .Title }}</b> </h2>
+            <h4>{{ .Params.role }}</h4>
+            <p>We promote interactions, at elementum erat mattis quis. In vitae vulputate tellus, sed laoreet est. Nam
+              eget dolor non eros rutrum facilisis ut vel sapien. Aenean sed vehicula massa. Morbi imperdiet egestas
+              ullamcorperet. Expo neque, congue nec nibh in, pellentesque fringilla risus. Suspendisse hendrerit sapien
+              ut pretium. Aenean nulla. </p>
+            <p>facilisis eu porta non, rutrum sit amet nibh. Quisque id diam feugiat, pharetra arcu eget, bibendum
+              tortor. Vivamus aliquam lacus id leo tristique sagittis. Pellentesque mattis diam metus, id commodo ex
+              placerat vitae. Curabitur lobortis justo ante, in varius leo congue id. Etiam a libero elementum, posuere
+              est at, sodales justo. Proin nec venenatis metus. </p>
+            </div>
+          <div class="icon d-inline-block">
+            <ul class="d-inline-block">
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+          
+{{ end }}

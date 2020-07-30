@@ -1,0 +1,718 @@
+#hero slider
+faculty:
+  show: 4
+  items:
+    - title: "Arun D. Mahindrakar"
+      role:  "Professor"
+      image: "/images/people/facultyarun.png"
+      link: "/people/faculty/arun-d-mahindrakar"
+      
+    - title: "Arun RajKumar"
+      role:  "Project Associate"
+      image: "/images/people/arun-rajkumar.png"
+      link: "/people/faculty/arun-rajkumar"
+
+    - title: "Arun Tangirala"
+      role:  "Professor"
+      image: "/images/people/arunkt.png"
+      link: "/people/faculty/arun-tangirala"
+    
+    - title: "B. Ravindran"
+      role:  "Head, Robert Bosch Centre for Data Science and AIr"
+      image: "/images/people/ravi.jpg"
+      link: "/people/faculty/b.Ravindran"
+    
+    - title: "Gitakrishnan Ramadurai"
+      role:  "Associate Professor"
+      image: "/images/people/gitakrishnan.png"
+      link: "/people/faculty/gitakrishnan-ramadurai"
+    
+    - title: "Nandan Sudarsanam"
+      role:  "Associate Professor"
+      image: "/images/people/nandan.png"
+      link: "/people/faculty/nandan-sudarsanam"
+
+    - title: "Raghunathan Rengaswamy"
+      role:  "Associate Professor"
+      image: "/images/people/raghur.png"
+      link: "/people/faculty/raghunathan-rengaswamy"
+
+    - title: "Karthik Raman"
+      role:  "Associate Professor"
+      image: "/images/people/kraman.jpg"
+      link: "/people/faculty/karthik-raman"
+
+    - title: "Mitesh M. Khapra"
+      role:  "Assistant Professor"
+      image: "/images/people/kraman.jpg"
+      link: "/people/faculty/mitesh-m-khapra"
+
+    - title: "Balaji Srinivasan"
+      role:  "Associate Professor"
+      image: "/images/people/bslsji-01.png"
+      link: "/people/faculty/balaji-srinivasan"
+
+    - title: "Sudarsan Padmanaban"
+      role:  "Associate Professor"
+      image: "/images/people/sudarsan-01.png"
+      link: "/people/faculty/sudarsan-padmanaban"
+
+    - title: "Bhargava Rama Chilukuri"
+      role:  "Assistant Professor"
+      image: "/images/people/bhargava1.png"
+      link: "/people/faculty/bhargava-rama-chilukuri"
+
+    - title: "Krishnan Balasubramanian"
+      role:  "Institute Chair Professor"
+      image: "/images/people/facultybala.jpg"
+      link: "/people/faculty/krishnan-balasubramanian"
+
+    - title: "Srinivasa Chakravarthy. V"
+      role:  "Professor"
+      image: "/images/people/facultysrini1.jpg"
+      link: "/people/faculty/srinivasa-chakravarthy-v"
+
+    - title: "Ganapathy Krishnamurthi"
+      role:  "Assistant Professor"
+      image: "/images/people/ganapath-01.png"
+      link: "/people/faculty/ganapathy-krishnamurthi"
+
+    - title: "Harish Guruprasad"
+      role:  "Assistant Professor"
+      image: "/images/people/harishguru1.png"
+      link: "/people/faculty/harish-guruprasad"
+
+    - title: "Kamakoti Veezhinathan"
+      role:  "Professor"
+      image: "/images/people/kama.png"
+      link: "/people/faculty/kamakoti-veezhinathan"
+
+    - title: "Karthik K Srinivasan"
+      role:  "Professor"
+      image: "/images/people/karthikks.png"
+      link: "/people/faculty/karthik-k-srinivasan"
+
+    - title: "Kaushik Mitra"
+      role:  "Professor"
+      image: "/images/people/kmitra.png"
+      link: "/people/faculty/kaushik-mitra"
+
+    - title: "Krishna Jagannathan"
+      role:  "Associate Professor"
+      image: "/images/people/krishnaj.png"
+      link: "/people/faculty/krishna-jagannathan"
+
+    - title: "Lelitha Devi Vanajakshi"
+      role:  "Professor"
+      image: "/images/people/lelitha.png"
+      link: "/people/faculty/lelitha-devi-vanajakshi"
+
+    - title: "Manikandan Narayanan"
+      role:  "Associate Professor"
+      image: "/images/people/mani.png"
+      link: "/people/faculty/manikandan-narayanan"
+
+    - title: "Shankar Narasimhan"
+      role:  "M.S. Ananth Institute Chair Professor"
+      image: "/images/people/naras.png"
+      link: "/people/faculty/shankar-narasimhan"
+
+    - title: "Nirav Bhatt"
+      role:  "Assistant Professor"
+      image: "/images/people/nirav.png"
+      link: "/people/faculty/nirav-bhatt"
+
+    - title: "Prabhu Rajagopal"
+      role:  "Professor"
+      image: "/images/people/prajagopal.png"
+      link: "/people/faculty/prabhu-rajagopal"
+
+    - title: "Pratyush Kumar"
+      role:  "Assistant Professor"
+      image: "/images/people/pk.png"
+      link: "/people/faculty/pratyush-kumar"
+ 
+    - title: "Ramkrishna Pasumarthy"
+      role:  "Associate Professor"
+      image: "/images/people/ramkrishna.png"
+      link: "/people/faculty/Ramkrishna Pasumarthy"
+
+    - title: "Radha Krishna Ganti"
+      role:  "Associate Professor"
+      image: "/images/people/rganti.png"
+      link: "/people/faculty/radha-krishna-ganti"
+
+    - title: "Rahul R Marathe"
+      role:  "Professor"
+      image: "/images/people/rrmarathe.png"
+      link: "/people/faculty/rahul-r-marathe"
+
+    - title: "Venkatesh Ramaiyan"
+      role:  "Assistant Professor"
+      image: "/images/people/rvenkat.jpg"
+      link: "/people/faculty/venkatesh-ramaiyan"
+
+
+    - title: "Himanshu Sinha"
+      role:  "Associate Professor"
+      image: "/images/people/sinha.jpg"
+      link: "/people/faculty/himanshu-sinha"
+
+    - title: "Sivaram Ambikasaran"
+      role:  "Assistant Professor"
+      image: "/images/people/Siva.jpg"
+      link: "/people/faculty/sivaram-ambikasaran"
+
+    - title: "Sridharakumar Narasimhan"
+      role:  "Assistant Professor"
+      image: "/images/people/sridharkrn.png"
+      link: "/people/faculty/sridharakumar-narasimhan"
+
+
+staff:
+  show: 4
+  items:
+    - title: "Keerthika M"
+      role:  "Junior Research Fellow"
+      image: "/images/people/keerthika.jpg"
+      link: "/people/staff/keerthika-m"
+      
+    - title: "Manjushri R"
+      role:  "Project Associate"
+      image: "/images/people/manju-01.png"
+      link: "/people/staff/manjushri-r"
+
+    - title: "J.Joel Aro"
+      role:  "Project Associate"
+      image: "/images/people/joel-01.png"
+      link: "/people/staff/j-joel-aro"
+
+    - title: "Siddharth Nishtala"
+      role:  "Project Associate"
+      image: "/images/people/SiddharthNishtala1.jpg"
+      link: "/people/staff/siddharth-nishtala"
+
+    - title: "Manoj Bharadhwaj"
+      role:  "Project Associate"
+      image: "/images/people/Mano.jpg"
+      link: "/people/staff/manoj-bharadhwaj"
+    
+    - title: "Amrit Seshadri Diggavi"
+      role:  "Post Baccalaureate Fellow"
+      image: "/images/people/amrit-01.png"
+      link: "/people/staff/amrit-seshadri-diggavi"
+    
+    - title: "JHarry Antony"
+      role:  "Project Associate"
+      image: "/images/people/harry.jpg"
+      link: "/people/staff/jharry-antony"
+
+    - title: "Philge Philip"
+      role:  "Senior Project Officer"
+      image: "/images/people/philge1.png"
+      link: "/people/staff/philge-philip"
+
+    - title: "Nilesh Anantha Subramanian"
+      role:  "Post Baccalaureate Fellow"
+      image: "/images/people/Nilesh-01.png"
+      link: "/people/staff/nilesh-anantha-subramanian"
+    
+    - title: "Ragunathan D"
+      role:  "Senior Project Officer"
+      image: "/images/people/raghu-01.png"
+      link: "/people/staff/regunathan-d"
+
+    - title: "Sai Sruthi A"
+      role:  "Project Associate"
+      image: "/images/people/sai-01.png"
+      link: "/people/staff/sai-sruthi-a"
+
+    - title: "V.Senthamizhan"
+      role:  "Post Baccalaureate Fellow"
+      image: "/images/people/Sentha.png"
+      link: "/people/staff/v-senthamizhan"
+    
+    - title: "Anjana A S"
+      role:  "Project Associate"
+      image: "/images/people/anjana.png"
+      link: "/people/staff/anjana-a-s"
+
+    - title: "Raghavendra Mallela"
+      role:  "Project Associate"
+      image: "/images/people/Ragha.jpg"
+      link: "/people/staff/raghavendra-mallela"
+
+    - title: "Karthik Venkat Ramanan"
+      role:  "Project Associate"
+      image: "/images/people/karthick-01.png"
+      link: "/people/staff/karthik-venkat-ramanan"
+    
+    - title: "Sourav Kumar Mohanty"
+      role:  "Project Associate"
+      image: "/images/people/Sourav.png"
+      link: "/people/staff/sourav-kumar-mohanty"
+
+    - title: "Sivapriya"
+      role:  "Post Baccalaureate Fellow"
+      image: "/images/people/sivapriya.jpg"
+      link: "/people/staff/sivapriya"
+
+    - title: "Shaiju N K"
+      role:  "System administrator"
+      image: "/images/people/shaiju1.jpg"
+      link: "/people/staff/shaiju-n-k"
+    
+    - title: "Darwin"
+      role:  "Project Associate"
+      image: "/images/people/darwin1.jpg"
+      link: "/people/staff/darwin"
+
+    - title: "Dhivya Karthic"
+      role:  "CTM Program Manager"
+      image: "/images/people/divya.jpg"
+      link: "/people/staff/dhivya-karthic"
+
+
+collaborators:
+  show: 4
+  items:
+    - title: "Anand Raghunathan"
+      role:  "Professor of Electrical and Comuter Engineering Chair"
+      image: "/images/people/anand1.jpg"
+      link: "/people/collaborators/anand-raghunathan"
+      
+    - title: "Ashok Venkitaraman"
+      role:  "Ursula Zoellner Professor of Cancer Research"
+      image: "/images/people/ashok.jpg"
+      link: "/people/collaborators/ashok-venkitaraman"
+
+    - title: "Dominique Bonvin"
+      role:  "Professor and Director of the Automatic Control Laboratory of EPFL"
+      image: "/images/people/3bonvin.jpg"
+      link: "/people/collaborators/dominique-bonvin"
+
+    - title: "Milind Tambe"
+      role:  "Gordon McKay Professor of Computer Science & Director Center for Research in Computation and Society (CRCS), Harvard Universit"
+      image: "/images/people/tampe.jpg"
+      link: "/people/collaborators/milind-tambe"
+
+    - title: "Jessica Seddon"
+      role:  "Senior Fellow at the Centre for Technology and Policy"
+      image: "/images/people/seddon.png"
+      link: "/people/collaborators/jessica-seddon"
+    
+    - title: "Srinivasan Parthasarathy"
+      role:  "Professor at Dept. of Computer Science and Engineering and Department of Biomedical Informatics, The Ohio State University."
+      image: "/images/people/srinivasan.jpg"
+      link: "/people/collaborators/Srinivasan-parthasarathy"
+    
+    - title: "Sriraam Natarajan"
+      role:  "Professor, Director Center for Machine Learning, The University of Texas at Dallas"
+      image: "/images/people/sri.png"
+      link: "/people/collaborators/sriram-natarajan"
+
+    - title: "BS Murthy"
+      role:  "Professor, Dept. of Civil Engineering, IIT Madras."
+      image: "/images/people/murthy.jpg"
+      link: "/people/collaborators/bs-murthy"
+
+    - title: "Ramasuri Narayanam"
+      role:  "Research Scientist IBM Research, India."
+      image: "/images/people/ram1.jpg"
+      link: "/people/collaborators/ramasuri-narayanam"
+    
+    - title: "GS Madhusudan"
+      role:  "Technology/Management Consultant."
+      image: "/images/people/gs.jpg"
+      link: "/people/collaborators/gs-madhusudan"
+
+    - title: "Vivek Kumar"
+      role:  "Associate Director, Computational Sciences at The Jackson Laboratory"
+      image: "/images/people/vivek-01.png"
+      link: "/people/collaborators/vivek-kumar"
+
+    - title: "Robert Platt"
+      role:  "Assistant Professor, Khoury College of Computer Sciences"
+      image: "/images/people/platt-01.png"
+      link: "/people/collaborators/robert-platt"
+    
+    - title: "Resmi Suresh"
+      role:  "Assistant Professor department of chemical engineering, IITG"
+      image: "/images/people/resmi.png"
+      link: "/people/collaborators/resmi-suresh"
+
+    - title: "Balaji Vasan Srinivasan"
+      role:  "Principal Scientist, Adobe Research"
+      image: "/images/people/balaji-01.png"
+      link: "/people/collaborators/balaji-vasam-srinivasan"
+
+    - title: "Dr. R. Ramakrishnan"
+      role:  "Assistant Professor of VIT University Vellore"
+      image: "/images/people/ramakrish-01.png"
+      link: "/people/collaborators/dr-r-ramakrishnan"
+    
+    - title: "Hemanth Kumar Tanneru"
+      role:  "Assistant Professor of Chemical Engineering,IIPE Visakhapatnam"
+      image: "/images/people/hemanth.png"
+      link: "/people/collaborators/hemanth-kumar-tenneru"
+
+    
+Researchers:
+  show: 4
+  items:
+    - title: "Debomita Chakraborty"
+      role:  "PhD Scholar"
+      image: "/images/people/debomita.png"
+      link: "/people/researchers/debomita-chakraborty"
+    
+    - title: "Gayathri S"
+      role:  "PhD Scholar"
+      image: "/images/people/gayathri.jpg"
+      link: "/people/researchers/gayathri-s"
+
+    - title: "Malvika Sudhakar"
+      role:  "PhD Scholar"
+      image: "/images/people/malvika.png"
+      link: "/people/researchers/malvika-sudhakar"
+
+    - title: "Prem Jagadeesan"
+      role:  "PhD Scholar"
+      image: "/images/people/premj.jpg"
+      link: "/people/researchers/prem-jagadeesan"
+
+    - title: "Ramya"
+      role:  "PhD Scholar"
+      image: "/images/people/ramya1.png"
+      link: "/people/researchers/ramya"
+
+    - title: "B.Bala Shyamala"
+      role:  "PhD Scholar"
+      image: "/images/people/shyamala.png"
+      link: "/people/researchers/b-bala-shyamala"
+
+    - title: "Manikandan"
+      role:  "PhD Scholar"
+      image: "/images/people/manikandan1.png"
+      link: "/people/researchers/manikandan"
+
+    - title: "Mohammed Faheem"
+      role:  "PhD Scholar"
+      image: "/images/people/mohammed1.jpg"
+      link: "/people/researchers/mohammed-feheem"
+    
+    - title: "Sugyani Mahapatra"
+      role:  "PhD Scholar"
+      image: "/images/people/sugyani.jpg"
+      link: "/people/researchers/sugyani-mahapatra"
+    
+    - title: "Suryanarayanan"
+      role:  "PhD Scholar"
+      image: "/images/people/surya1.png"
+      link: "/people/researchers/suryanarayanan"
+    
+    - title: "Venkataraman"
+      role:  "PhD Scholar"
+      image: "/images/people/venkatraman1.png"
+      link: "/people/researchers/venkataraman"
+
+    - title: "Preksha Nema"
+      role:  "PhD Scholar"
+      image: "/images/people/preksha.jpeg"
+      link: "/people/researchers/preksha-nema"
+
+    - title: "Tarun Kumar"
+      role:  "PhD Scholar"
+      image: "/images/people/tarun1.jpg"
+      link: "/people/researchers/tarun-kumar"
+
+    - title: "Priyan bhattacharya"
+      role:  "MS Scholar"
+      image: "/images/people/priyan.png"
+      link: "/people/researchers/priyan-bhattacharya"
+
+    - title: "Samyugdha V"
+      role:  "MS ScholarScholar"
+      image: "/images/people/samyugdha.jpg"
+      link: "/people/researchers/samyugdha-v"
+
+    - title: "Shayantan Banerjee"
+      role:  "MS ScholarScholar"
+      image: "/images/people/shayantan.jpg"
+      link: "/people/researchers/shayantan-benerjee"
+
+    - title: "Nitesh Methani"
+      role:  "MS ScholarScholar"
+      image: "/images/people/nitesh.jpg"
+      link: "/people/researchers/nitesh-methani"
+
+    - title: "Pritha Ganguly"
+      role:  "MS ScholarScholar"
+      image: "/images/people/pritha.jpg"
+      link: "/people/researchers/pritha-ganguly"
+
+    - title: "Suman Banerjee"
+      role:  "MS ScholarScholar"
+      image: "/images/people/suman.jpg"
+      link: "/people/researcherssuman-benerjee"
+
+    - title: "Anusha"
+      role:  "MS ScholarScholar"
+      image: "/images/people/anusha1.png"
+      link: "/people/researchers/anusha"
+
+    - title: "Abhijeet Vjas"
+      role:  "Dual degree"
+      image: "/images/people/vjas.png"
+      link: "/people/researchers/abhijeet-vjas"
+
+    - title: "Anand A R"
+      role:  "Dual degree"
+      image: "/images/people/anand.png"
+      link: "/people/researchers/anand-a-r"
+
+    - title: "Chandrasekar Subramanian"
+      role:  "PhD Scholar"
+      image: "/images/people/chandra-01.png"
+      link: "/people/researchers/chandrasekar-subramanian"
+
+    - title: "Harshavardhan.P.v"
+      role:  "Dual Degree"
+      image: "/images/people/Harsha.png"
+      link: "/people/researchers/harshavardhan-p-v"
+
+    - title: "Jahnvi Patel"
+      role:  "Dual Degree"
+      image: "/images/people/janvi.png"
+      link: "/people/researchers/janavi-patel"
+
+    - title: "Abhishek Rao"
+      role:  "Dual Degree"
+      image: "/images/people/Absh.jpg"
+      link: "/people/researchers/abhishek-rao"
+
+    - title: "Arjun Manoharan"
+      role:  "MS Scholar"
+      image: "/images/people/arjunm1.png"
+      link: "/people/researchers/arjun-manoharan"
+    
+    - title: "Deepak Maurya"
+      role:  "MS Scholar"
+      image: "/images/people/deepakmaurya.jpg"
+      link: "/people/researchers/deepak-maurya"
+
+    - title: "Karthik Thiagarajan"
+      role:  "MS Scholar"
+      image: "/images/people/karthik02.jpg"
+      link: "/people/researchers/Karthik-thiagarajan"
+
+    - title: "Pavan Ravishankar"
+      role:  "MS Scholar"
+      image: "/images/people/Pavan-01.png"
+      link: "/people/researchers/pavan-ravishankar"
+
+    - title: "Lakshmi Narayan Pandey"
+      role:  "MS Scholar"
+      image: "/images/people/lakshmi1.jpg"
+      link: "/people/researchers/lakshmi-narayan-pandey"
+
+    - title: "Rahul vashisht"
+      role:  "PhD Scholar"
+      image: "/images/people/rahul1.jpg"
+      link: "/people/researchers/rahul-vashisht"
+
+    - title: "Ananya Sai"
+      role:  "MS Scholar"
+      image: "/images/people/ananya.png"
+      link: "/people/researchers/Ananya-Sai"
+
+    - title: "Jeshuren Chelladurai"
+      role:  "MS Scholar"
+      image: "/images/people/jeshuran.jpg"
+      link: "/people/researchers/jeshuren-chelladurai"
+
+
+alumni:
+  show: 4
+  items:
+    - title: "Indu Gangwar"
+      role:  "Post Doctoral Research Fellow"
+      image: "/images/people/indu1.png"
+      link: "/people/alumni/indu-gangwar"
+    
+    - title: "Dr. Hemanth Bilihalli"
+      role:  "PhD Scholar"
+      image: "/images/people/hemanth1.png"
+      link: "/people/alumni/dr-hemanth-bilihalli"
+
+    - title: "Aarthi Ravikrishnanr"
+      role:  "PhD Scholar"
+      image: "/images/people/aarthiravi1.png"
+      link: "/people/alumni/aarthi-ravikrishnan"
+
+    - title: "Sivadurgaprasad"
+      role:  "PhD Scholar"
+      image: "/images/people/sivadurgaprasad1.jpg"
+      link: "/people/alumni/Sivadurgaprasad"
+
+    - title: "Sukanya G"
+      role:  "Project Associate"
+      image: "/images/people/Sukanya-01.png"
+      link: "/people/alumni/sukanya-g"
+
+    - title: "Likith Reddy"
+      role:  "Junior Research Fellow"
+      image: "/images/people/likithreddy.jpg"
+      link: "/people/alumni/likith-reddy"
+
+    - title: "Shashank Srivastava"
+      role:  "MS Scholar"
+      image: "/images/people/shashank.png"
+      link: "/people/alumni/shashank-srivastava"
+
+    - title: "Siddharth Arora"
+      role:  "MS Scholar"
+      image: "/images/people/siddhartha1.png"
+      link: "/people/alumni/siddharth-arora"
+    
+    - title: "Shweta Bhardwaj"
+      role:  "MS Scholar"
+      image: "/images/people/shweta.jpg"
+      link: "/people/alumni/shweta-bhardwaj"
+    
+    - title: "Nikitha Moghe"
+      role:  "MS Scholar"
+      image: "/images/people/nikita.jpg"
+      link: "/people/alumni/nikitha-moghe"
+    
+    - title: "Priyesh V"
+      role:  "MS Scholar"
+      image: "/images/people/priyesh1.png"
+      link: "/people/alumni/Priyesh-V"
+
+    - title: "Ayush Ranjan Sharma"
+      role:  "M Tech"
+      image: "/images/people/ayush1.png"
+      link: "/people/alumni/ayush-ranjan-sharma"
+
+    - title: "Jaya Ingle"
+      role:  "M.Tech"
+      image: "/images/people/jayaingle.jpg"
+      link: "/people/alumni/jaya-ingle"
+
+    - title: "Shubham Patel"
+      role:  "M.Tech"
+      image: "/images/people/shubhampatel.jpg"
+      link: "/people/alumni/shubham-patel"
+
+    - title: "Abhijeet Ranjan"
+      role:  "M.Tech"
+      image: "/images/people/abijith1.png"
+      link: "/people/alumni/abhijeet-ranjan"
+
+    - title: "Devasoth Vijaypal"
+      role:  "M.Tech"
+      image: "/images/people/devasoth1.png"
+      link: "/people/alumni/devasoth-vijaypal"
+
+    - title: "Balaji P"
+      role:  "Ph.D"
+      image: "/images/people/balaji1.png"
+      link: "/people/alumni/balaji-p"
+
+    - title: "Dibu John Philip"
+      role:  "Ph.D"
+      image: "/images/people/dibu1.png"
+      link: "/people/alumni/dibu-john-philip"
+
+    - title: "Deepak Mittal"
+      role:  "MS ScholarScholar"
+      image: "/images/people/deepak.jpg"
+      link: "/people/alumni/deepak mittal"
+
+    - title: "Gaurav Bilolikar"
+      role:  "Dual degree"
+      image: "/images/people/gaurav.jpg"
+      link: "/people/alumni/gaurav-bilolikar"
+
+    - title: "Muthukumarasamy Saravanan"
+      role:  "Dual Degree"
+      image: "/images/people/muthukumarasamy1.png"
+      link: "/people/alumni/muthukumarasamy-saravanan"
+
+    - title: "Pradeep Natarajan"
+      role:  "Dual degree"
+      image: "/images/people/pradeepnatarajan.jpg"
+      link: "/people/alumni/pradeep-natarajan"
+
+    - title: "Karthik Azhagesan"
+      role:  "Dual degree"
+      image: "/images/people/karthikazhagesan.png"
+      link: "/people/alumni/karthik-azhagesan"
+
+    - title: "Chandrasekar Subramanian"
+      role:  "PhD Scholar"
+      image: "/images/people/chandra-01.png"
+      link: "/people/alumni/chandrasekar-subramanian"
+
+    - title: "Harshavardhan.P.v"
+      role:  "Dual Degree"
+      image: "/images/people/Harsha.png"
+      link: "/people/alumni/harshavardhan-p-v"
+
+    - title: "Jahnvi Patel"
+      role:  "Dual Degree"
+      image: "/images/people/janvi.png"
+      link: "/people/alumni/janavi-patel"
+
+    - title: "Abhishek Rao"
+      role:  "Dual Degree"
+      image: "/images/people/Absh.jpg"
+      link: "/people/alumni/abhishek-rao"
+
+    - title: "Arjun Manoharan"
+      role:  "MS Scholar"
+      image: "/images/people/arjunm1.png"
+      link: "/people/alumni/arjun-manoharan"
+    
+    - title: "Deepak Maurya"
+      role:  "MS Scholar"
+      image: "/images/people/deepakmaurya.jpg"
+      link: "/people/alumni/deepak-maurya"
+
+    - title: "Karthik Thiagarajan"
+      role:  "MS Scholar"
+      image: "/images/people/karthik02.jpg"
+      link: "/people/alumni/Karthik-thiagarajan"
+
+    - title: "Pavan Ravishankar"
+      role:  "MS Scholar"
+      image: "/images/people/Pavan-01.png"
+      link: "/people/alumni/pavan-ravishankar"
+
+    - title: "Lakshmi Narayan Pandey"
+      role:  "MS Scholar"
+      image: "/images/people/lakshmi1.jpg"
+      link: "/people/alumni/lakshmi-narayan-pandey"
+
+    - title: "Rahul vashisht"
+      role:  "PhD Scholar"
+      image: "/images/people/rahul1.jpg"
+      link: "/people/salumni/rahul-vashisht"
+
+    - title: "Ananya Sai"
+      role:  "MS Scholar"
+      image: "/images/people/ananya.png"
+      link: "/people/alumni/Ananya-Sai"
+
+    - title: "Jeshuren Chelladurai"
+      role:  "MS Scholar"
+      image: "/images/people/jeshuran.jpg"
+      link: "/people/alumni/jeshuren-chelladurai"
+
+
+
+
+
+
+
+
