@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://testing-rbc-site.netlify.app"
 languageCode = "en-us"
 title = "RBC-DSAI"
 theme = "megamsolutions-rbc"
