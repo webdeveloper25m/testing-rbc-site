@@ -68,6 +68,13 @@ URL = "about-us"
 pre = "fas fa-address-card"
 weight = 10
 
+
+[[menu.main]]
+name = "Visitors"
+URL = "visitors"
+pre = "fas fa-address-card"
+weight = 11
+
 #######################taxonomies#################################
 
 [taxonomies]
