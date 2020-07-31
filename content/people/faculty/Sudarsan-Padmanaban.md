@@ -7,8 +7,17 @@ role: "Associate Professor"
 draft: false 
 ---
 
-{{<rawhtml>}}
-
-<h3><b>Associate Professor</b></h3>
+{{<rawhtml>}} 
+<div align="justify">
+<h4>Email: sudarsanp@iitm.ac.in</h4>
+<h4>Research areas : Social and Political systems | Civil Society | Indian Medical Ethics | Indian Philosophy and Culture |</h4><br>
+</div>
+<br>
+<div>
+	<h2>Profile</h2>
+	<h3>
+		
+	<br>
+</div>
 
 {{</rawhtml>}}

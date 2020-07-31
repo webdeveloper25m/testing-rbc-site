@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="container mt-5">
+  <ul class="nav nav-tabs  flex-column flex-sm-row " id="people-tabs">
+    <li class="nav-item">
+          <a class="nav-link active flex-sm-fill" href="#visitors-panel" a data-toggle="tab"> visitors </a>
+    </li>
+  </ul>
+  
+       <div class="tab-content  pt-5 " >
+        <div class="tab-pane fade show active" id="visitors-panel">
+         <div class="row">
+         {{ with .Site.Data.visitorspage.visitors }} 
+          {{ range .items}}
+        <div class="col-3">
+        <div class="wow bounceInUp mt-5" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;">
+        <div class="card card__news" style="height: 40vh;">
+        <div class="card-image" style="width: 12.5vw; height:60vh;">
+         <img src="{{ .image }}"  alt="" class="card-img-top card__news-img" style="height:28vh;margin:5px;border-radius:50%;text-align: center">
+         </div>
+        <div class="card-body">
+          <h1 class="text-center"><b><a class="card-title card__news-header" href="{{ .link }}">{{ .title }}</a></b></h1>
+            <div>
+              <h4 class="text-center">{{ .role }}</h4>
+                </div>
+                  <div>
+                    <p class="card-text">
+                        {{ .summary }}
+                    </p>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+       {{ end }}
+       {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

@@ -7,11 +7,13 @@
 @import 'base/typography';
 @import 'base/utilities';
 @import 'base/preloader';
+
 @import 'components/button';
 @import 'components/timeline';
 @import 'components/hero';
 @import 'components/cards';
 @import 'components/carousel';
+
 
 // @import 'layout/grid';
 @import 'layout/header';
@@ -19,6 +21,6 @@
 
 @import 'pages/home';
 @import 'pages/event';
+@import 'pages/people';
 @import 'pages/research-list-section';
 @import 'pages/teaching-list-section';
-@import 'pages/people';

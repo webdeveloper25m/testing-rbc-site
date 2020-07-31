@@ -1,0 +1,66 @@
+#hero slider
+
+visitors:
+   show: 4
+   items:
+    - title: "Mahendra Sonawane"
+      role:  "Group Leader"
+      image: "/images/people/MahendraSonawane1.jpg"
+      link: "/visitors/mahendra-sonawane"
+      
+    - title: "Krishna Karuturi PhD"
+      role:  "Director"
+      image: "/images/people/jackson1.jpg"
+      link: "/visitors/krishna-karuturi-phd"
+
+    - title: "Dr Manish Gupta"
+      role:  "Director at Google Research India, Advisor, VideoKen"
+      image: "/images/people/manish1.jpg"
+      link: "/visitors/dr-manish-gupta"
+    
+    - title: "Dominique Bonvin"
+      role:  "Professor and Director of the Automatic Control Laboratory of EPFL"
+      image: "/images/people/3bonvin.jpg"
+      link: "/people/collaborators/dominique-bonvin"
+
+    - title: "Milind Tambe"
+      role:  "Gordon McKay Professor of Computer Science & Director Center for Research in Computation and Society (CRCS), Harvard Universit"
+      image: "/images/people/tampe.jpg"
+      link: "/people/collaborators/milind-tambe"
+
+    - title: "Srinivasan Parthasarathy"
+      role:  "Professor at Dept. of Computer Science and Engineering and Department of Biomedical Informatics, The Ohio State University."
+      image: "/images/people/srinivasan.jpg"
+      link: "/people/collaborators/srinivasan-parthasarathy"
+    
+    - title: "Sriraam Natarajan"
+      role:  "Professor, Director Center for Machine Learning, The University of Texas at Dallas"
+      image: "/images/people/sri.png"
+      link: "/people/collaborators/sriraam-natarajan"
+
+
+    - title: "Hemanth Kumar Tanneru"
+      role:  "Assistant Professor of Chemical Engineering,IIPE Visakhapatnam"
+      image: "/images/people/hemanth.png"
+      link: "/people/collaborators/hemanth-kumar-tenneru"
+
+    - title: "Resmi Suresh"
+      role:  "Assistant Professor department of chemical engineering, IITG"
+      image: "/images/people/resmi.png"
+      link: "/people/collaborators/resmi-suresh"
+
+    - title: "Balaji Vasan Srinivasan"
+      role:  "Principal Scientist, Adobe Research"
+      image: "/images/people/balaji-01.png"
+      link: "/people/collaborators/balaji-vasam-srinivasan"
+
+    - title: "Dr. R. Ramakrishnan"
+      role:  "Assistant Professor of VIT University Vellore"
+      image: "/images/people/ramakrish-01.png"
+      link: "/people/collaborators/dr-r-ramakrishnan"
+    
+    - title: "Dr Thanh Thi Nguyen"
+      role:  "Senior Lecturer"
+      image: "/images/people/thanh-01.png"
+      link: "/visitors/dr-thanh-thi-nguyen"
+

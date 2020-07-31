@@ -8,9 +8,14 @@ draft: false
 
 ---
 
-{{<rawhtml>}}
+{{<rawhtml>}} 
 
-<h3><b>Assistant Professor</b></h3>
+<div align="justify">
+<h4>Email: arun@cse.iitm.ac.in</h4>
+<h4>Research areas : Machine Learning | Rank Aggregation | Statistical Learning |</h4>
+</div>
+<br>
+<div><h2>Profile</h2></div>
 
 {{</rawhtml>}}
 

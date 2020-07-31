@@ -18,9 +18,9 @@ faculty:
       link: "/people/faculty/arun-tangirala"
     
     - title: "B. Ravindran"
-      role:  "Head, Robert Bosch Centre for Data Science and AIr"
+      role:  "Head, Robert Bosch Centre for Data Science and AI"
       image: "/images/people/ravi.jpg"
-      link: "/people/faculty/b.Ravindran"
+      link: "/people/faculty/b-ravindran"
     
     - title: "Gitakrishnan Ramadurai"
       role:  "Associate Professor"
@@ -304,12 +304,12 @@ collaborators:
     - title: "Srinivasan Parthasarathy"
       role:  "Professor at Dept. of Computer Science and Engineering and Department of Biomedical Informatics, The Ohio State University."
       image: "/images/people/srinivasan.jpg"
-      link: "/people/collaborators/Srinivasan-parthasarathy"
+      link: "/people/collaborators/srinivasan-parthasarathy"
     
     - title: "Sriraam Natarajan"
       role:  "Professor, Director Center for Machine Learning, The University of Texas at Dallas"
       image: "/images/people/sri.png"
-      link: "/people/collaborators/sriram-natarajan"
+      link: "/people/collaborators/sriraam-natarajan"
 
     - title: "BS Murthy"
       role:  "Professor, Dept. of Civil Engineering, IIT Madras."
@@ -649,70 +649,39 @@ alumni:
       image: "/images/people/karthikazhagesan.png"
       link: "/people/alumni/karthik-azhagesan"
 
-    - title: "Chandrasekar Subramanian"
-      role:  "PhD Scholar"
-      image: "/images/people/chandra-01.png"
-      link: "/people/alumni/chandrasekar-subramanian"
+    - title: "Beethika Tripathy"
+      role:  "MS Scholar"
+      image: "/images/people/beethika.jpg"
+      link: "/people/alumni/beethika-tripathy"
 
-    - title: "Harshavardhan.P.v"
+    - title: "Mohan Bhambhani"
       role:  "Dual Degree"
-      image: "/images/people/Harsha.png"
-      link: "/people/alumni/harshavardhan-p-v"
+      image: "/images/people/mohan1.jpg"
+      link: "/people/alumni/mohan-bhambhani"
 
-    - title: "Jahnvi Patel"
-      role:  "Dual Degree"
-      image: "/images/people/janvi.png"
-      link: "/people/alumni/janavi-patel"
+    - title: "Sankaran Vaidyanathan"
+      role:  "Project Associate"
+      image: "/images/people/sankaran1.png"
+      link: "/people/alumni/sankaran-vaidyanathan"
 
-    - title: "Abhishek Rao"
-      role:  "Dual Degree"
+    - title: "Sapana Chaudhary"
+      role:  "Project Associate"
       image: "/images/people/Absh.jpg"
-      link: "/people/alumni/abhishek-rao"
+      link: "/people/alumni/sapana-chaudhary"
 
-    - title: "Arjun Manoharan"
-      role:  "MS Scholar"
-      image: "/images/people/arjunm1.png"
-      link: "/people/alumni/arjun-manoharan"
+    - title: "Aravind Suresh"
+      role:  "B.Tech"
+      image: "/images/people/aravindsuresh.png"
+      link: "/people/alumni/aravind-suresh"
     
-    - title: "Deepak Maurya"
-      role:  "MS Scholar"
-      image: "/images/people/deepakmaurya.jpg"
-      link: "/people/alumni/deepak-maurya"
+    - title: "Saurabh Desai"
+      role:  "Project Associate"
+      image: "/images/people/saurabh1.png"
+      link: "/people/alumni/saurabh-desaia"
 
-    - title: "Karthik Thiagarajan"
-      role:  "MS Scholar"
-      image: "/images/people/karthik02.jpg"
-      link: "/people/alumni/Karthik-thiagarajan"
+    - title: "Synchon Mandal"
+      role:  "Project Associate"
+      image: "/images/people/synchon1.jpg"
+      link: "/people/alumni/synchon-mandal"
 
-    - title: "Pavan Ravishankar"
-      role:  "MS Scholar"
-      image: "/images/people/Pavan-01.png"
-      link: "/people/alumni/pavan-ravishankar"
-
-    - title: "Lakshmi Narayan Pandey"
-      role:  "MS Scholar"
-      image: "/images/people/lakshmi1.jpg"
-      link: "/people/alumni/lakshmi-narayan-pandey"
-
-    - title: "Rahul vashisht"
-      role:  "PhD Scholar"
-      image: "/images/people/rahul1.jpg"
-      link: "/people/salumni/rahul-vashisht"
-
-    - title: "Ananya Sai"
-      role:  "MS Scholar"
-      image: "/images/people/ananya.png"
-      link: "/people/alumni/Ananya-Sai"
-
-    - title: "Jeshuren Chelladurai"
-      role:  "MS Scholar"
-      image: "/images/people/jeshuran.jpg"
-      link: "/people/alumni/jeshuren-chelladurai"
-
-
-
-
-
-
-
-
+    

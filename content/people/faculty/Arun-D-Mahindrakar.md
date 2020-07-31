@@ -8,6 +8,15 @@ draft: false
 
 ---
 
-{{<rawhtml>}}
-<h3><b>Professor</b></h3>
+{{<rawhtml>}} 
+<div align="justify">
+<h4>Email:arun_dm@iitm.ac.in</h4>
+<h4>Research areas :Nonlinear stability analysis | Geometric control of mobile robots | Formation control of autonomous vehicles |</h4><br>
+</div>
+<br>
+<div>
+	<h2>Profile</h2>
+	<br>
+</div>
+
 {{</rawhtml>}}

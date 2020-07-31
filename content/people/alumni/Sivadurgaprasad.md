@@ -1,5 +1,8 @@
 ---
 title: "Sivadurgaprasad"
-date: 2020-07-30T07:29:11+05:30
+date: 2020-07-30T22:51:46+05:30
+images:
+  - /images/people/sivadurgaprasad1.jpg
+role: "PhD Scholar" 
 draft: false
 ---

@@ -9,6 +9,15 @@ draft: false
 
 ---
 
-{{<rawhtml>}}
-<h3><b>Associate Professor</b></h3>
+{{<rawhtml>}} 
+<div align="justify">
+<h4>Email: sbalaji@iitm.ac.in</h4>
+<h4>Research areas : Fluid Dynamics | Turbulence in compressible and hypersonic flows | Computatuin of rarefied flows | Numerical Analysis | High Performance Computing |</h4><br>
+</div>
+<br>
+<div>
+	<h2>Profile</h2>
+	<br>
+</div>
+
 {{</rawhtml>}}
