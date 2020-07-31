@@ -68,7 +68,6 @@ URL = "about-us"
 pre = "fas fa-address-card"
 weight = 10
 
-
 [[menu.main]]
 name = "Visitors"
 URL = "visitors"
