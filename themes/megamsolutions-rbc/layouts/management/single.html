@@ -1,0 +1,151 @@
+{{ define "main" }}
+<section class="single-page">
+    <div class="container">
+  <div class="dots mt-5">
+  <div>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+  <div>
+  <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+ </div>
+ <div>
+  <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+ </div>
+
+           <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+           <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+           <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+           <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+           <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+  </div>    
+
+      <div class="row card-move mt-4">
+        
+        <div class="col-6">
+          <div class="card-image m-0">
+            {{ with .Params.images }}
+            <a href=""><img src="{{ index . 0 }}" alt="" class="card-img-top img-fluid" style="background-color: white;"></a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-text">
+              <h2 class="heading mb-2"><b>{{ .Title }}</b> </h2>
+              <h4 class="role-text">{{ .Params.role }}</h4>
+            <hr>
+            <div class="content">
+            {{.Content }}
+          </div>
+          </div>
+          <div class="footer__social-icons" style="font-size: 2rem !important;">
+              <a href="https://twitter.com/rbc_dsai_iitm" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/rbcdsai/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/rbcdsai" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rbcdsai/" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href=" https://www.youtube.com/channel/UCKaYqGvmULmTrN0PH5YPFcA  " class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+         
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <br>
+  <br>
+          
+{{ end }}

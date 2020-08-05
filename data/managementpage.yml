@@ -1,0 +1,111 @@
+#hero slider
+
+Governing:
+   show: 4
+   items:
+    - title: "Prof. Bhaskar Ramamurthi"
+      role:  "Director - IIT Madras"
+      image: "/images/people/director1.png"
+      link: "/management/Governing/prof-bhaskar-ramamurthi"
+      
+    - title: "Mr.Vijay Ratna Parkhe"
+      role:  "President and Managing Director, Robert Bosch Engineering India"
+      image: "/images/people/vijay1.png"
+      link: "/management/Governing/mr-vijay-ratna-parkhe"
+
+    - title: "Dr. Vijendran Venkoparao"
+      role:  "Senior General Manager, Robert Bosch Engineering India."
+      image: "/images/people/vijendran1.jpg"
+      link: "/management/Governing/dr-vijendren-venkoparao"
+    
+    - title: "Prof. Ravindra Gettu"
+      role:  "Dean - IC & SR, IIT Madras, Ex Officio - Member"
+      image: "/images/people/ravindrangettu1.png"
+      link: "/management/Governing/prof-ravindra-gettu"
+
+    - title: "B. Ravindran"
+      role:  "Head, Robert Bosch Centre for Data Science and AI"
+      image: "/images/people/ravi.jpg"
+      link: "/people/faculty/b-ravindran"
+
+technology:
+   show: 4
+   items:
+    - title: "Prof.Dr.Bjoern Andres"
+      role:  "Global Head of AI Research, Bosch"
+      image: "/images/people/andres.jpg"
+      link: "/management/technology/prof-dr-bjoern-andres"
+      
+    - title: "Dame Wendy Hall"
+      role:  "University of Southampton"
+      image: "/images/people/dame1.png"
+      link: "/management/technology/dame-wendy-hall"
+
+    - title: "Kamakoti Veezhinathan"
+      role:  "Professor-IIT Madres"
+      image: "/images/people/kama.png"
+      link: "/people/faculty/kamakoti-veezhinathan"
+    
+    - title: "Prof. Kristian Kersting"
+      role:  "TU Darmstadt"
+      image: "/images/people/kristian.png"
+      link: "/management/technology/prof-kristian-kersting"
+
+    - title: "Prof. Krithi Ramamritham"
+      role:  "IIT Bombay"
+      image: "/images/people/krithi2.png"
+      link: "/management/technology/prof-krithi-ramamritham"
+
+    - title: "Dr. Sriram Raghavan"
+      role:  "IBM Research"
+      image: "/images/people/krithi2.png"
+      link: "/management/technology/dr-sriram-raghavan"
+
+    - title: "Dr. Vijendran Venkoparao"
+      role:  "Senior General Manager, Robert Bosch Engineering India."
+      image: "/images/people/vijendran1.jpg"
+      link: "/management/Governing/dr-vijendren-venkoparao"
+
+    - title: "B. Ravindran"
+      role:  "Head, Robert Bosch Centre for Data Science and AI"
+      image: "/images/people/ravi.jpg"
+      link: "/people/faculty/b-ravindran"  
+
+core:
+   show: 4
+   items:
+    - title: "B. Ravindran"
+      role:  "Head, Robert Bosch Centre for Data Science and AI"
+      image: "/images/people/ravi.jpg"
+      link: "/people/faculty/b-ravindran"
+    
+    - title: "Gitakrishnan Ramadurai"
+      role:  "Associate Professor"
+      image: "/images/people/gitakrishnan.png"
+      link: "/people/faculty/gitakrishnan-ramadurai"
+    
+    - title: "Nandan Sudarsanam"
+      role:  "Associate Professor"
+      image: "/images/people/nandan.png"
+      link: "/people/faculty/nandan-sudarsanam"
+
+    - title: "Raghunathan Rengaswamy"
+      role:  "Associate Professor"
+      image: "/images/people/raghur.png"
+      link: "/people/faculty/raghunathan-rengaswamy"
+
+    - title: "Karthik Raman"
+      role:  "Associate Professor"
+      image: "/images/people/kraman.jpg"
+      link: "/people/faculty/karthik-raman"
+
+
+Chief:
+   show: 4
+   items:
+    - title: "Sridhar R"
+      role:  "Chief Operating Officer"
+      image: "/images/people/director1.png"
+      link: "/management/Chiefsridhar-r"
+      
+    
