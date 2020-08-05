@@ -6,22 +6,22 @@ Governing:
     - title: "Prof. Bhaskar Ramamurthi"
       role:  "Director - IIT Madras"
       image: "/images/people/director1.png"
-      link: "/management/Governing/prof-bhaskar-ramamurthi"
+      link: "/management/governing/prof-bhaskar-ramamurthi"
       
     - title: "Mr.Vijay Ratna Parkhe"
       role:  "President and Managing Director, Robert Bosch Engineering India"
-      image: "/images/people/vijay1.png"
-      link: "/management/Governing/mr-vijay-ratna-parkhe"
+      image: "/images/people/vijay11.png"
+      link: "/management/governing/mr-vijay-ratna-parkhe"
 
     - title: "Dr. Vijendran Venkoparao"
       role:  "Senior General Manager, Robert Bosch Engineering India."
       image: "/images/people/vijendran1.jpg"
-      link: "/management/Governing/dr-vijendren-venkoparao"
+      link: "/management/governing/dr-vijendran-venkoparao"
     
     - title: "Prof. Ravindra Gettu"
       role:  "Dean - IC & SR, IIT Madras, Ex Officio - Member"
       image: "/images/people/ravindrangettu1.png"
-      link: "/management/Governing/prof-ravindra-gettu"
+      link: "/management/governing/prof-ravindra-gettu"
 
     - title: "B. Ravindran"
       role:  "Head, Robert Bosch Centre for Data Science and AI"
@@ -58,13 +58,13 @@ technology:
 
     - title: "Dr. Sriram Raghavan"
       role:  "IBM Research"
-      image: "/images/people/krithi2.png"
+      image: "/images/people/dsriram.jpg"
       link: "/management/technology/dr-sriram-raghavan"
 
     - title: "Dr. Vijendran Venkoparao"
       role:  "Senior General Manager, Robert Bosch Engineering India."
       image: "/images/people/vijendran1.jpg"
-      link: "/management/Governing/dr-vijendren-venkoparao"
+      link: "/management/governing/dr-vijendran-venkoparao"
 
     - title: "B. Ravindran"
       role:  "Head, Robert Bosch Centre for Data Science and AI"
@@ -105,7 +105,7 @@ Chief:
    items:
     - title: "Sridhar R"
       role:  "Chief Operating Officer"
-      image: "/images/people/director1.png"
-      link: "/management/Chiefsridhar-r"
+      image: "/images/people/sridhar1.jpg"
+      link: "/management/chief/sridhar-r"
       
     
