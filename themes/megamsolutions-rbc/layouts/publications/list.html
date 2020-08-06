@@ -1,133 +1,372 @@
 {{ define "main" }}
-
-<div class="section">
-<div class="row mt-2">
-  <div class="col-12">
-  <section class="section-hero-news hero hero--news" style="margin-top:4%;height: 35vh;">
-  <div class="hero-breadcrumb">
-  <div class="carousel__item--heading text-center">Publications</div>
-  <ul class="hero-breadcrumb-list">
-    <li><a href="/"><i class="fas fa-home"></i></a></li>
-    <li><a href="#"><i class="fas fa-newspaper"></i> {{ .Title }}</a></li>
-  </ul>
-</div>
-</section>
-</div>
-</div>
-<div class ="row">
-<div class="col">
-  <div class="mt-5 text-center" style="height: 15vh; border-bottom: 1px solid #000;font-size: 1.5rem;">
-   <b>Here is a list of various courses offered by the faculty associated with RBCDSAI.</b></div>
-  
-   <div style="transform:translate(86vh,-55%);border: 1px solid white;background-color: white;width: 7.35vw;padding: 4px;font-size: 1.40rem;"><strong>Home>publications</strong></div>
-</div>
-</div>
-</div>
-<section>
-  <div class="container">
-<div class="row mt-2">
-  <div class="col-md-6">
-    <h1>Publications</h1>
-  </div>
-</div>
+<div class="container">
+  <div>
+         <h1>2020</h1>
+         </div>
+         <br>
 <div class="row">
-  <div class="col">
-    <div class="card-body">
-      <div class="text-center">
-            2020
-          </div>
-       {{ with .Site.Data.publicationspage.publications }} 
-          {{ range .year_2020 }}
 
-          <h2 class=""><b><a  href="{{ .link }}">{{ .title }}</a></b></h2>
-            <div>
-              <h4 class="">{{ .author }}</h4>
+          
+         {{ range where .Site.Data.publications ".year" "2020" }}
+          
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
                 </div>
-                  <div>
-                    <h5 class="card-text">
-                        {{ .journal }}
-                    </h5>
-                     <hr>
-                  </div>
-                  {{ end }}
-                  {{ end }}
+              </div>
             </div>
+          </div>
+          {{ end }} 
+        
+         
+        </div>
 
+        <!--- 2019 --->
+
+        <div>
+         <h1>2019</h1>
+         </div>
+         <br>
+<div class="row">
+
+          
+         {{ range where .Site.Data.publications ".year" "2019" }}
+          
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+        
+         
+        </div>
+
+        <!--- 2018 --->
+
+        <div>
+         <h1>2018</h1>
+         </div>
+         <br>
+         <div class="row">
+         {{ range where .Site.Data.publications ".year" "2018" }}
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+        
+         
+        </div>
+
+
+        <!--- 2017 --->
+
+        <div>
+         <h1>2017</h1>
+         </div>
+         <br>
+         <div class="row">
+         {{ range where .Site.Data.publications ".year" "2017" }}
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+      </div>
+        <!--- 2016 --->
+
+        <div>
+         <h1>2016</h1>
+         </div>
+         <br>
+         <div class="row">
+         {{ range where .Site.Data.publications ".year" "2016" }}
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+        
+         
+        </div>
+
+        <!--- 2015 --->
+
+        <div>
+         <h1>2015</h1>
+         </div>
+         <br>
+         <div class="row">
+         {{ range where .Site.Data.publications ".year" "2015" }}
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+        
+         
+        </div>
+
+        <!--- 2014 --->
+
+        <div>
+         <h1>2014</h1>
+         </div>
+         <br>
+         <div class="row">
+         {{ range where .Site.Data.publications ".year" "2014" }}
+          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="card card__publications">
+              <img
+                src="images/publications/{{.image}}"
+                alt=""
+                class="card-img-top card__publications-img"
+              />
+              <div class="card__publications-icons">
+                <i class="fas fa-user-tie"></i><span>{{.author}}</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card__publications-header">{{.title}}</h5>
+                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
+              </div>
+              <!-- <div class="card__news-cta">
+                <a class="btn-text btn-text--small" href="{{.link}}"
+                  >Read &rarr;</a
+                >
+              </div> -->
+              <div class="card-footer">
+                <div class="card__publications-icons">
+                  {{ if .booktitle }}
+                  <i class="fas fa-book"></i><span>{{.booktitle}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .journal }}
+                  <i class="fas fa-book"></i><span>{{.journal}} ({{.year}})</span>
+                  {{ end }}
+                  {{ if .pages }}
+                  <i class="far fa-file-alt"></i><span>{{.pages}}</span>
+                  {{ end }}
+                  {{ if .volume }}
+                  <i class="far fa-file-alt"></i><span>{{.volume}}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }} 
+        
+         
         </div>
       </div>
-      <div class="row">
-     <div class="col">
-     <div class="card-body">
-      <div class="text-center">
-            2019
-          </div>
-       {{ with .Site.Data.publicationspage.publications }} 
-          {{ range .year_2019 }}
-       <h2 class=""><b><a  href="{{ .link }}">{{ .title }}</a></b></h2>
-            <div>
-              <h4 class="">{{ .author }}</h4>
-                </div>
-                  <div>
-                    <h5 class="card-text">
-                        {{ .journal }}
-                    </h5>
-                     <hr>
-                  </div>
-                  {{ end }}
-                  {{ end }}
-            </div>
-
-        </div>
-      </div>
-
-    <div class="row">
-     <div class="col">
-     <div class="card-body">
-      <div class="text-center">
-            2018
-          </div>
-       {{ with .Site.Data.publicationspage.publications }} 
-          {{ range .year_2018 }}
-        <h2 class=""><b><a  href="{{ .link }}">{{ .title }}</a></b></h2>
-            <div>
-              <h4 class="">{{ .author }}</h4>
-                </div>
-                  <div>
-                    <h5 class="card-text">
-                        {{ .journal }}
-                    </h5>
-                     <hr>
-                  </div>
-                  {{ end }}
-                  {{ end }}
-            </div>
-          </div>
-      </div>
-
-       <div class="row">
-     <div class="col">
-     <div class="card-body">
-      <div class="text-center">
-            2018
-          </div>
-       {{ with .Site.Data.publicationspage.publications }} 
-          {{ range .year_2019 }}
-       <h1 class=""><b><a class="card-title card__news-header" href="{{ .link }}">{{ .title }}</a></b></h1>
-            <div>
-              <h4 class="">{{ .author }}</h4>
-                </div>
-                  <div>
-                    <p class="card-text">
-                        {{ .journal }}
-                    </p>
-                     <hr>
-                  </div>
-                  {{ end }}
-                  {{ end }}
-            </div>
-          </div>
-      </div>
-    </div>
-    </section>
-
     {{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
