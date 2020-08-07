@@ -194,3 +194,38 @@ $(function () {
   doMinimize(mql);
   doHide(mql_hide);
 });
+
+
+
+function myFunction() {
+    var input, filter, cards, cardContainer, h5, title, i , author,journal;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h5.card-title");
+        author = cards[i].querySelector(".card__publications-icons span");
+        journal= cards[i].querySelector(".card-footer .card__publications-icons span");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1 ) {
+            cards[i].style.display = "";
+        } 
+       else if (author.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } 
+        /*else if (journal.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+          }*/ 
+          else {
+            cards[i].style.display = "none";
+        }
+      }
+    }
+
+
+  /*$("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });*/
