@@ -1,4 +1,10 @@
 
+.list-controls {
+  padding:1em;
+  background-color: #feffdf;
+  border-bottom:1px solid #eee;
+}
+
 .sort {
     -moz-transition: all .2s linear;
     -webkit-transition: all .2s linear;
@@ -10,6 +16,5 @@
     transform:rotate(180deg);
 }
 
-.year{
-  
-}
+
+
