@@ -226,20 +226,14 @@ $(".sort").click(function () {
   $(this).toggleClass("down");
 
   var li = $('#myItems .years');
-  var list=$('#myItems .year');
+  
   li.sort(function(a, b) {
     if(parseInt($(a).text()) > parseInt($(b).text()))
         return 1;
     else return -1;
   });
   $('#myItems').empty().html(li);
-  list.sort(function(a, b) {
-    if(parseInt($(a).text()) > parseInt($(b).text()))
-        return 1;
-    else return -1;
-  });
-  $('#myItems').empty().html(list);
- })
+  })
 
   /*$("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
