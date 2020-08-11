@@ -1,30 +1,32 @@
 {{ define "main" }}
+
 <div class="container">
-  
-         
-{{ $years := slice }}
-{{ range .Site.Data.publications }}
-  {{ $years = $years | append .year }}
-{{ end }}
-{{ $years = uniq $years  }}
+ {{ $years := slice }}
+ {{ range .Site.Data.publications }}
+ {{ $years = $years | append .year }}
+ {{ end }}
+ {{ $years = uniq $years }}
 
 <h2>Publications</h2>
 <div class="row">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
+    <div class="col-sm-10 mb-3">
+    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for title,author..">
 </div>
-<div id="myItems">
+ <div class="col-sm-2 mb-3">
+   <button class="btn toggle-sort">sort<div class="fa fa-chevron-up sort"></div></button>
+</div>
+</div>
+<div  id="myItems"  data-option-key="filter">
 {{ range  $years  }}
-  {{ $year := . }}
-  {{ $pageCount := len ( where $.Site.Data.publications ".year" $year) }}
-  <h1 >{{ . }}(<span style="color:red;">{{ $pageCount }} publication{{ if ne $pageCount 1 }}s{{ end }} </span>)</h1>
- 
-<div class="row">
-
-          
-         {{ range where $.Site.Data.publications ".year" $year }}  
-          
-          <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+{{ $year := . }}
+{{ $pageCount := len ( where $.Site.Data.publications ".year" $year) }}
+ <h1 class="years">
+ {{ . }}(<span  style="color:red;">{{ $pageCount }} publication{{ if ne $pageCount 1 }}s{{ end }} </span>)</h1>
+<div class="row years">
+     {{ range where $.Site.Data.publications ".year" $year }}  
+     <div class="col-lg-3 col-md-6 wow bounceInUp"
+      data-wow-duration="1.4s" 
+      style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="card card__publications">
               <img
                 src="images/publications/{{.image}}"
@@ -33,16 +35,10 @@
               />
               <div class="card__publications-icons">
                 <i class="fas fa-user-tie"></i><span>{{.author}}</span>
-              </div>
+              </div> 
               <div class="card-body">
                 <h5 class="card-title card__publications-header">{{.title}}</h5>
-                <!-- <p class="card-text">{{.summary | truncate 120}}</p> -->
               </div>
-              <!-- <div class="card__news-cta">
-                <a class="btn-text btn-text--small" href="{{.link}}"
-                  >Read &rarr;</a
-                >
-              </div> -->
               <div class="card-footer">
                 <div class="card__publications-icons">
                   {{ if .booktitle }}
@@ -61,12 +57,11 @@
               </div>
             </div>
           </div>
-          {{ end }} 
-       
-      </div>
+          {{ end }}
+        </div>
      {{ end }}
    </div>
-  </div>
+</div>
 {{ end }}
 
 
