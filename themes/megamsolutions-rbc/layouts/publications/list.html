@@ -1,12 +1,11 @@
 {{ define "main" }}
-
+{{ $a := 1 }}
 <div class="container">
  {{ $years := slice }}
  {{ range .Site.Data.publications }}
  {{ $years = $years | append .year }}
  {{ end }}
  {{ $years = uniq $years }}
-
 <h2>Publications</h2>
 <div class="row">
     <div class="col-sm-10 mb-3">
@@ -16,13 +15,16 @@
    <button class="btn toggle-sort">sort<div class="fa fa-chevron-up sort"></div></button>
 </div>
 </div>
-<div  id="myItems"  data-option-key="filter">
+<div  id="myItems">
 {{ range  $years  }}
-{{ $year := . }}
+<p class="years" >{{ $year := . }}</p>
 {{ $pageCount := len ( where $.Site.Data.publications ".year" $year) }}
- <h1 class="years">
- {{ . }}(<span  style="color:red;">{{ $pageCount }} publication{{ if ne $pageCount 1 }}s{{ end }} </span>)</h1>
+
 <div class="row years">
+  <div class="col-12">
+    <h1>
+     {{ . }}(<span  style="color:red;">{{ $pageCount }} publication{{ if ne $pageCount 1 }}s{{ end }} </span>)</h1>
+ </div>
      {{ range where $.Site.Data.publications ".year" $year }}  
      <div class="col-lg-3 col-md-6">
             <div class="card card__publications">
@@ -59,6 +61,7 @@
         </div>
      {{ end }}
    </div>
+  }
 </div>
 {{ end }}
 
