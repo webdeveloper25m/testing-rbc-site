@@ -1,0 +1,21 @@
+#hero slider
+
+Gallery:
+   show: 4
+   items:
+    - title: "Lab lunch @ The Westin Velachery Chennai (2018)"
+      image: "/images/labphoto-26.jpg"
+      
+    - title: "Celebrating inauguration of our new laboratory @ Soi Soy Chennai (2018)"
+      image: "/images/labphoto-24.jpg"
+     
+    - title: "20th Transcription Meeting, CDFD Hyderabad (2018)"
+      image: "/images/labphoto-21.jpg"
+    
+    - title: "In Boston (2018)"
+      image: "/images/labphotos-18.jpg"
+
+    - title: "End of semster lab lunch (2018)"
+      image: "/images/labphotos-19.jpg"
+
+ 

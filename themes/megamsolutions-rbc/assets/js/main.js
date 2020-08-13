@@ -236,6 +236,14 @@ $(".sort").click(function () {
 
   })
 
+$(document).ready(function(){
+  $('.venobox').venobox({
+    cb_content_loaded : function(obj, gallIndex, thenext, theprev){
+    },
+    cb_post_resize:function(){},
+  });
+})
+
   /*$("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#myDIV *").filter(function() {

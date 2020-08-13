@@ -74,6 +74,12 @@ URL = "visitors"
 pre = "fas fa-address-card"
 weight = 11
 
+[[menu.main]]
+name = "Credits"
+URL = "credits"
+pre = "fas fa-graduation-cap"
+weight = 12
+
 #######################taxonomies#################################
 
 [taxonomies]
