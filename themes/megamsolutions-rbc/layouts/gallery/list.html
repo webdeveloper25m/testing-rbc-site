@@ -14,7 +14,11 @@
         <div class="wow bounceInUp mt-5" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;">
         <div class="card card__news gallery-card">
         <div class="card-image">
-      <a class="venobox card-img-top card__news-img text-center" data-gall="gall1" title="{{ .title }}" href="{{ .image }}"><img src="{{ .image }}" style="height: 50vh;max-width:100;"></a>
+      <a class="venobox card-img-top card__news-img text-center" data-gall="gall1" title="{{ .title }}" href="{{ .image }}"><img src="{{ .image }}" style="height: 50vh;max-width:100;">
+        <div class="overlay">
+          <p class="text-content">{{ .title }}</p>
+        </div></a>
+      </a>
         </div>
       </div>
     </div>
