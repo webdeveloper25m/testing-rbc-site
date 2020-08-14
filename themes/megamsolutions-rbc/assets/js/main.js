@@ -230,11 +230,8 @@ $(".sort").click(function () {
         return 1;
     else return -1;
   });
- 
- 
- $('#myItems').empty().html(li);
-
-  })
+$('#myItems').empty().html(li);
+})
 
 $(document).ready(function(){
   $('.venobox').venobox({
@@ -243,6 +240,10 @@ $(document).ready(function(){
     cb_post_resize:function(){},
   });
 })
+
+$('.flip').hover(function(){
+        $(this).find('.card').toggleClass('flipped');
+});
 
   /*$("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();

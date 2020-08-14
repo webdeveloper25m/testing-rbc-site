@@ -1,0 +1,48 @@
+#hero slider
+
+Builtwith:
+   show: 4
+   items:
+    - title: "Hugo"
+      link: "https://gohugo.io/"
+      
+    - title: "Bootstrap 4"
+      link: "https://getbootstrap.com/"
+    
+    - title: "Sass"
+      link: "https://sass-lang.com/"
+
+    - title: "Font Awesome Icons"
+      link: "https://fontawesome.com/"
+    
+    - title: "Google Fonts"
+      link: "https://fonts.google.com/"
+
+    - title: "Shuffle Javascript"
+      link: "https://vestride.github.io/Shuffle/"
+
+    - title: "Venobox Javascript"
+      link: "https://veno.es/venobox/"
+
+
+    - title: "Jquery"
+      link: "https://jquery.com/"
+    
+Imagecredits:
+   show: 4
+   items:
+    - link: "https://research.pasteur.fr/"
+      
+    - link: "http://www.nbu.ac.in/"
+    
+    - link: "https://fujomedia.eu/"
+
+    - link: "https://sbs.strathmore.edu/"
+    
+    
+    
+    
+   
+
+    
+

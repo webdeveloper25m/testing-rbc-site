@@ -8,43 +8,32 @@
 <div class="container mt-5">
 <div class="justify">
  <div>
-  <h4><b>IBSE logo was designed by Gaurav Bilolikar, an Alumni of IBSE.</b></h4>
+  <h2><b>IBSE logo was designed by Gaurav Bilolikar, an Alumni of IBSE.</b></h2>
 </div>
 <br>
 <h1>Built with:</h1>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://gohugo.io/"><b>Hugo</b></a></span>
+  {{ with .Site.Data.creditspage.Builtwith }} 
+  {{ range .items}}
+<div  class="wow bounceInUp mb-2" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;font-size: 1.75rem;">
+  <i class="fas fa-link"></i><span class="ml-2 credits-title "><a href="{{ .link }}"><b>{{ .title }}</b></a></span>
 </div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://getbootstrap.com/"><b>Bootstrap 4</b></a></span>
+{{ end }}
+{{ end }}
+
+<h1>Image credits :</h1>
+  {{ with .Site.Data.creditspage.Imagecredits }} 
+  {{ range .items}}
+<div class="wow bounceInUp mb-2" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;font-size: 1.75rem;">
+   <i class="fas fa-link"></i><span class="ml-2 credits-title"><a href="{{ .link }}"><b>{{ .link }}</b></a></span>
 </div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://fontawesome.com/"><b>Font Awesome Icons</b></a></span>
-</div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://fonts.google.com/"><b>Google Fonts</b></a></span>
-</div>
+{{ end }}
+{{ end }}
 <br>
-<div>
-  <h1>Image credits :</h1>
-<div style="font-size: 1.75rem;">
-   <i class="fas fa-link"></i><span class="ml-2"><a href="https://research.pasteur.fr/"><b>https://research.pasteur.fr/</b></a></span>
-</div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="http://www.nbu.ac.in/"><b>http://www.nbu.ac.in/</b></a></span>
-</div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://fujomedia.eu/"><b>https://fujomedia.eu/</b></a></span>
-</div>
-<div style="font-size: 1.75rem;">
-  <i class="fas fa-link"></i><span class="ml-2"><a href="https://sbs.strathmore.edu/"><b>https://sbs.strathmore.edu/</b></a></span>
-</div>
-<br>
-</div>
+
 <div>
   <h1>Web Developers:</h1>
-<div class="mb-5" style="font-size: 1.75rem;">
-  <a href="https://fatah.co/">Hugo Development Team</a><span class="ml-1">of Fatah Digital.</span>
+<div class="wow bounceInUp mb-5" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: bounceInUp;font-size: 1.75rem;">
+ <b><span class="credits-title"><a  href="https://www.megamsolutions.com/">Megam Solutions Development Team</a></span><span class="ml-2">For You Business Digital Transformation.</span></b>
 </div>
 <br>
 </div>
